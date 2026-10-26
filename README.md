@@ -5,7 +5,12 @@
 > **Un logiciel à concevoir, moderniser ou remettre sous contrôle ?**
 > Je transforme un besoin complexe ou un existant difficile à faire évoluer en architecture compréhensible, plan de réalisation vérifiable et logiciel fonctionnel.
 
-[**Me contacter sur Malt**](https://www.malt.fr/profile/stanislavsaveliev) · [Voir les études de cas](#études-de-cas--preuves-techniques) · [Ma méthode](#ma-méthode-dingénierie)
+[**Me contacter sur Malt**](https://www.malt.fr/profile/stanislavsaveliev) · [Voir les études de cas](#études-de-cas--preuves-techniques) · [Méthode de migration](docs/METHODE_MIGRATION_FR.md) · [Site de présentation (sources)](docs/index.html)
+
+<div align="center">
+  <a href="https://github.com/cybou-fr/CybouBrowser"><img alt="Capture réelle du navigateur CYBOU en développement, interface Windows" src="https://raw.githubusercontent.com/cybou-fr/CybouBrowser/main/docs/screenshots/cybou-current-ui.webp" width="720" /></a>
+  <p><sub>Une réalisation réelle : CYBOU Browser, interface Windows en cours de développement (alpha), non certifiée.</sub></p>
+</div>
 
 ## Les missions sur lesquelles je peux vous aider
 
