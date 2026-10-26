@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10233a">
+  <meta name="description" content="Stanislav Saveliev — architecte logiciel et systèmes indépendant. Audit, modernisation, migration technologique, architecture et réalisation de MVP en C++/Qt, Go et Rust.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Stanislav Saveliev — Architecte logiciel & systèmes">
+  <meta property="og:description" content="De l'audit de l'existant à la livraison d'un MVP : architecture, migration, logiciels natifs et systèmes distribués.">
+  <title>Stanislav Saveliev — Architecte logiciel & systèmes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Aller au contenu</a>
+  <header class="site-header">
+    <nav class="container nav" aria-label="Navigation principale">
+      <a class="brand" href="#top" aria-label="Accueil">SS<span class="brand-dot">.</span><span class="brand-word"> Architecture</span></a>
+      <div class="nav-links"><a href="#offres">Prestations</a><a href="#projets">Projets</a><a href="#methode">Méthode</a></div>
+      <a class="btn btn-small btn-outline" href="https://www.malt.fr/profile/stanislavsaveliev" rel="noopener noreferrer">Contact Malt ↗</a>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero container" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="signal"></span> ARCHITECTE LOGICIEL & SYSTÈMES INDÉPENDANT</p>
+        <h1>Des systèmes complexes.<br><span>Des décisions claires.</span><br>Du logiciel qui fonctionne.</h1>
+        <p class="lead">J'aide les équipes à <strong>moderniser un logiciel existant</strong>, <strong>sécuriser une migration technologique</strong> ou <strong>passer d'une idée à un MVP</strong>, de l'architecture à l'implémentation.</p>
+        <div class="hero-actions"><a class="btn btn-primary" href="https://www.malt.fr/profile/stanislavsaveliev" rel="noopener noreferrer">Parler de votre projet ↗</a><a class="btn btn-text" href="#projets">Explorer les preuves techniques ↓</a></div>
+        <div class="expertise"><span>C++ / Qt / QML</span><span>Go</span><span>Rust</span><span>Migration</span><span>Cloud & desktop</span></div>
+      </div>
+      <aside class="hero-panel" aria-label="Méthode de travail">
+        <p class="panel-label">UNE APPROCHE DE BOUT EN BOUT</p>
+        <div class="panel-line"><b>01</b><span>Comprendre les contraintes et les risques</span></div>
+        <div class="panel-line"><b>02</b><span>Choisir une architecture proportionnée</span></div>
+        <div class="panel-line"><b>03</b><span>Livrer une tranche fonctionnelle vérifiable</span></div>
+        <div class="panel-line"><b>04</b><span>Documenter et transmettre</span></div>
+        <p class="panel-foot">L'IA accélère le travail d'ingénierie ; la responsabilité technique et la validation restent humaines.</p>
+      </aside>
+    </section>
+
+    <section class="section section-muted" id="offres">
+      <div class="container"><p class="eyebrow">01 / PRESTATIONS</p><h2>Vos défis deviennent des livrables concrets.</h2>
+        <p class="section-intro">Un interlocuteur qui conçoit <em>et</em> développe, avec des étapes adaptées aux risques et au budget.</p>
+        <div class="cards three">
+          <article class="service"><span class="card-number">01</span><h3>Audit & modernisation</h3><p>Votre système est difficile à maintenir, fragile ou trop coûteux à faire évoluer.</p><div class="line"></div><b>Livrables</b><p>Diagnostic, cartographie, options, décisions d'architecture, roadmap priorisée et premier incrément mesurable.</p></article>
+          <article class="service"><span class="card-number">02</span><h3>Migration technologique</h3><p>Changer de langage, de framework ou de plateforme tout en préservant les fonctionnalités et les données.</p><div class="line"></div><b>Livrables</b><p>Architecture cible, stratégie de transition, contrats, migration progressive et tests de non-régression.</p></article>
+          <article class="service"><span class="card-number">03</span><h3>Architecture → MVP</h3><p>Créer un produit utile sans construire une plateforme disproportionnée.</p><div class="line"></div><b>Livrables</b><p>Spécifications, arbitrages, code source, MVP démontrable, validation et documentation de transfert.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="projets">
+      <p class="eyebrow">02 / RÉALISATIONS CONSULTABLES</p><h2>Un portfolio qui laisse voir les décisions.</h2>
+      <p class="section-intro">Projets personnels open source de R&D : ils illustrent l'approche architecturale, <strong>pas</strong> des livraisons clients. Le statut et les limites sont documentés dans chaque dépôt.</p>
+      <div class="projects">
+        <article class="project featured">
+          <a class="project-art browser-art" href="https://github.com/cybou-fr/CybouBrowser" aria-label="Voir CYBOU Browser"><img src="https://raw.githubusercontent.com/cybou-fr/CybouBrowser/main/docs/screenshots/cybou-current-ui.webp" loading="lazy" alt="Capture réelle de CYBOU Browser sur Windows, interface alpha"></a>
+          <div class="project-content"><p class="project-meta">C++20 · Qt WebEngine · QML · Validation sécurité</p><h3>CYBOU Browser</h3><p>Navigateur natif : contrôle visible des permissions, frontières de confiance, gestion d'événements et tests de sécurité traçables.</p><p class="status">Alpha de développement — qualification et audit indépendants non terminés.</p><a href="https://github.com/cybou-fr/CybouBrowser/blob/main/docs/CASE_STUDY_FR.md">Étude de cas et preuves ↗</a></div>
+        </article>
+        <article class="project"><div class="project-top">01 / AI + DESKTOP</div><h3>MUTYVA</h3><p class="project-meta">C++20 · Qt 6.12 · QML · SQLite</p><p>Applications natives déclaratives, mutations contrôlées et données persistantes sans exécuter le code généré par l'IA.</p><p class="status">Prototype ; tests natifs Qt 6.12 encore à qualifier.</p><a href="https://github.com/cybou-fr/mutyva/blob/main/docs/CASE_STUDY_FR.md">Étude de cas ↗</a></article>
+        <article class="project"><div class="project-top">02 / BACKEND + INFRA</div><h3>ZFSCloud</h3><p class="project-meta">Go · gRPC · ZFS · TLS/mTLS</p><p>Logiciel de sauvegarde client–serveur associant API, stockage Linux, snapshots et interfaces utilisateur.</p><p class="status">Sources disponibles ; validation sécurité et gestion des secrets à compléter.</p><a href="https://github.com/cybou-fr/zfscloud/blob/main/docs/CASE_STUDY_FR.md">Étude de cas ↗</a></article>
+        <article class="project"><div class="project-top">03 / DISTRIBUTED SYSTEMS</div><h3>ConfidIS OS</h3><p class="project-meta">Rust · Reed–Solomon · Stockage chiffré</p><p>Infrastructure auto-hébergée de cellules de données et de fédération explicite de nœuds de confiance.</p><p class="status">Recherche et développement ; ni certification ni déploiement client revendiqué.</p><a href="https://github.com/cybou-fr/ConfidIS/blob/main/docs/CASE_STUDY_FR.md">Étude de cas ↗</a></article>
+      </div>
+      <p class="all-projects"><a href="https://github.com/cybou-fr?tab=repositories">Tous les dépôts publics GitHub ↗</a></p>
+    </section>
+    <section class="section section-muted" id="methode"><div class="container method-grid">
+      <div><p class="eyebrow">03 / INGÉNIERIE</p><h2>Architecture lisible.<br>Évolution maîtrisée.</h2><p>Je privilégie les contrats explicites, les décisions argumentées et des tranches verticales observables. Une architecture n'est pas un document isolé : elle guide le code, les tests et les migrations.</p><a href="https://github.com/cybou-fr/cybou-fr/blob/main/docs/METHODE_MIGRATION_FR.md">Voir ma démarche de migration ↗</a></div>
+      <ol class="steps"><li><span>01</span>Cadrage : besoin, contraintes, dette et risques</li><li><span>02</span>Arbitrage : options, ADR et architecture cible</li><li><span>03</span>Validation : contrats et scénarios critiques</li><li><span>04</span>Réalisation : code, tests, CI et démonstration</li><li><span>05</span>Transmission : documentation et décisions ouvertes</li></ol>
+    </div></section>
+    <section class="contact container"><p class="eyebrow">PARLONS DE VOTRE PROJET</p><h2>Votre prochain changement technique mérite un plan clair.</h2><p>Audit ponctuel, modernisation, migration ou MVP : discutons de la situation, des contraintes et d'un premier livrable réaliste.</p><a class="btn btn-primary" href="https://www.malt.fr/profile/stanislavsaveliev" rel="noopener noreferrer">Contacter sur Malt ↗</a></section>
+  </main>
+  <footer><div class="container foot"><span>© 2026 Stanislav Saveliev — Architecte logiciel & systèmes</span><a href="https://github.com/cybou-fr">GitHub ↗</a><span>Les projets présentés sont des réalisations personnelles de R&D.</span></div></footer>
+</body>
+</html>
