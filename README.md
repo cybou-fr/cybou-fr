@@ -1,49 +1,94 @@
-# Architecte Logiciel & Systèmes Senior
+# Stanislav Saveliev — Architecte logiciel & systèmes
 
-**Architecture logicielle · MVP · Migration technologique · Cloud · Desktop · Systèmes distribués · IA**
+**Architecture · Modernisation et migration · MVP · Cloud / Desktop · Systèmes distribués**
 
-> **De l'idée au MVP. De l'existant à une architecture modernisée.**
+> **Un logiciel à concevoir, moderniser ou remettre sous contrôle ?**
+> Je transforme un besoin complexe ou un existant difficile à faire évoluer en architecture compréhensible, plan de réalisation vérifiable et logiciel fonctionnel.
 
-Je suis **architecte logiciel et systèmes indépendant**, avec une expérience dans la conception, le développement et l'évolution de solutions complexes : applications cloud et desktop, systèmes distribués, réseaux P2P et infrastructures de stockage.
+[**Me contacter sur Malt**](https://www.malt.fr/profile/stanislavsaveliev) · [Voir les études de cas](#études-de-cas--preuves-techniques) · [Ma méthode](#ma-méthode-dingénierie)
 
-J'interviens **personnellement**, du cadrage technique à la livraison. J'utilise l'intelligence artificielle pour accélérer l'analyse, la documentation, l'implémentation et les tests, tout en conservant la responsabilité des choix d'architecture et de la validation technique.
+## Les missions sur lesquelles je peux vous aider
 
-## Ce que je peux apporter à votre projet
-
-| Besoin | Mon intervention | Livrables possibles |
+| Votre situation | Mon intervention | Livrables concrets |
 | --- | --- | --- |
-| **Concevoir un nouveau produit** | Cadrage, faisabilité, architecture, définition du périmètre MVP, développement assisté par IA | Spécifications, diagrammes, code source, MVP démontrable, tests |
-| **Migrer vers une autre stack** | Audit de l'existant, choix de la cible, stratégie de migration progressive, adaptation des composants et des données | Architecture cible, plan de migration, implémentation, tests de non-régression |
-| **Moderniser un logiciel** | Réduction de la dette technique, refonte des composants, amélioration de la maintenabilité | Diagnostic, roadmap priorisée, évolutions vérifiables |
-| **Concevoir un système complexe** | Architecture cloud, desktop, distribuée ou P2P ; conception des communications et du stockage | Contrats techniques, prototypes, composants et documentation |
+| **Une application existante devient fragile ou coûteuse à faire évoluer** | Audit technique, risques, dette, priorités et stratégie de modernisation | Cartographie, diagnostic, architecture cible, roadmap et première tranche d'amélioration |
+| **Vous devez changer de langage, framework ou plateforme** | Migration progressive et protection des comportements métier et des données | Plan de migration, contrats, code migré, tests de non-régression, stratégie de retour arrière |
+| **Vous souhaitez lancer un nouveau produit** | Cadrage, architecture proportionnée au besoin et développement d'un MVP | Spécifications, décisions d'architecture, prototype/MVP démontrable, tests et documentation |
+| **Vous construisez un logiciel natif ou un système distribué** | Conception et développement C++/Qt, Go ou Rust, API, stockage et sécurité | Composants, protocoles, interfaces, intégration et validation technique |
 
-### Domaines techniques
+J'interviens **personnellement**, de l'analyse initiale à la livraison. Je combine architecture et implémentation : pas de recommandations détachées du code, ni de code sans critères de validation.
 
-- **Langages :** Go, Rust, C++, Delphi, C#/.NET
-- **Desktop :** Qt, QML, applications natives et multiplateformes
-- **Systèmes :** cloud, communication réseau, architectures distribuées et P2P, stockage
-- **Ingénierie :** migration inter-stack, documentation d'architecture, validation, automatisation et développement assisté par IA
+## Études de cas & preuves techniques
 
-## Projets techniques sélectionnés
+**Ces projets sont des réalisations personnelles de R&D, pas des missions clients.** Chaque étude de cas distingue l'architecture cible, le code présent, les résultats vérifiés et les limites encore ouvertes.
 
-Ces projets personnels de recherche et développement illustrent différents aspects de mon travail. **Ils ne sont pas présentés comme des références clients ni comme des produits tous prêts pour la production.** Le statut et les limites propres à chacun sont documentés dans son dépôt.
+### 1. [MUTYVA — Applications natives déclaratives](https://github.com/cybou-fr/mutyva)
+**C++20 · Qt 6.12 / QML · SQLite · Ingénierie assistée par IA**
 
-| Projet | Ce qu'il illustre |
-| --- | --- |
-| **[MUTYVA](https://github.com/cybou-fr/mutyva)** | Conception d'un environnement applicatif déclaratif en C++/Qt/QML : composants, mutations contrôlées, historique local et intégration de l'IA en cours de validation |
-| **[CYBOU Browser](https://github.com/cybou-fr/CybouBrowser)** | Architecture d'un navigateur desktop en C++20/Qt WebEngine, contrôle explicite des permissions et démarche de validation de sécurité — version alpha |
-| **[ConfidIS OS](https://github.com/cybou-fr/ConfidIS)** | Architecture de stockage chiffré, fédération de nœuds, découpage Reed–Solomon et traçabilité opérationnelle |
-| **[ZFSCloud](https://github.com/cybou-fr/zfscloud)** | Application client-serveur en Go : gRPC, stockage ZFS, chiffrement et sauvegarde |
-| **[Sodix](https://github.com/cybou-fr/sodix)** | Outil CLI en Rust pour signatures numériques et opérations cryptographiques compatibles avec libsodium |
+Concevoir une application locale dont l'interface peut évoluer à partir de propositions d'IA **sans exécuter de code généré** et sans effacer les données utilisateur. Architecture modulaire, schémas contrôlés, générations immuables, transactions et décisions ADR.
 
-## Ma démarche
+- [Étude de cas (FR)](https://github.com/cybou-fr/mutyva/blob/main/docs/CASE_STUDY_FR.md)
+- [Architecture, exigences et risques](https://github.com/cybou-fr/mutyva/blob/main/docs/23_ARCHITECTURE_ASSESSMENT.md)
 
-**Comprendre → concevoir → documenter → développer → vérifier → transmettre.**
+*Statut : prototype en développement. Validation statique des contrats disponible ; qualification native Qt 6.12 encore à terminer.*
 
-Je privilégie des architectures **proportionnées au besoin**, la traçabilité des décisions et des livrables exploitables par le client ou par une autre équipe. Lors d'une migration, j'accorde une attention particulière à la **préservation de la logique métier**, des données et du comportement fonctionnel.
+### 2. [CYBOU Browser — Navigateur natif et sécurité explicite](https://github.com/cybou-fr/CybouBrowser)
+**C++20 · Qt WebEngine · QML · Threat modeling · Tests de sécurité**
 
-L'IA est un **accélérateur d'ingénierie**, pas un substitut à la revue du code, aux tests ou au jugement technique.
+Développer un navigateur desktop où les capacités demandées par les sites sont visibles et contrôlables. Séparation entre politique, demande observée, permission et usage effectif ; architecture par frontières de confiance ; validation de sécurité fondée sur des scénarios et des preuves.
 
-## Collaboration
+- [Étude de cas (FR)](https://github.com/cybou-fr/CybouBrowser/blob/main/docs/CASE_STUDY_FR.md)
+- [Qualité, preuves et limites](https://github.com/cybou-fr/CybouBrowser/blob/main/docs/ENGINEERING_QUALITY.md)
 
-**Missions d'architecture, de documentation, de migration et de réalisation de MVP**, ponctuelles ou de longue durée, à distance ou en mode hybride en France. Intervention au forfait ou en régie selon le périmètre ; **contractualisation possible via portage salarial**.
+*Statut : 0.4.0-alpha.1, projet de développement ; aucune certification de sécurité ni version finale revendiquée.*
+
+### 3. [ZFSCloud — Système de sauvegarde client–serveur](https://github.com/cybou-fr/zfscloud)
+**Go · gRPC / Protobuf · Linux / ZFS · TLS/mTLS · Client GUI/CLI**
+
+Assembler des services réseau, des contrats RPC, du stockage ZFS, des snapshots et plusieurs interfaces clientes. Le cas illustre l'intégration backend, infrastructure, protocole, sécurité et ergonomie.
+
+- [Étude de cas (FR)](https://github.com/cybou-fr/zfscloud/blob/main/docs/CASE_STUDY_FR.md)
+
+*Statut : sources et scénarios de test disponibles ; audit externe et cycle de vie des secrets à qualifier avant toute promesse de production.*
+
+### 4. [ConfidIS OS — Stockage chiffré et fédération de nœuds](https://github.com/cybou-fr/ConfidIS)
+**Rust · Systèmes distribués · Erasure coding · Cryptographie · Politiques de placement**
+
+Concevoir une infrastructure auto-hébergée de traitement temporaire de données sensibles : chiffrement côté client, fragments Reed–Solomon, placement sur plusieurs nœuds et traçabilité d'exploitation.
+
+- [Étude de cas (FR)](https://github.com/cybou-fr/ConfidIS/blob/main/docs/CASE_STUDY_FR.md)
+
+*Statut : R&D en développement ; aucune certification réglementaire ou garantie de résilience terrain revendiquée.*
+
+**Travaux complémentaires :** [Sodix — utilitaire CLI Rust / cryptographie](https://github.com/cybou-fr/sodix) et autres expérimentations accessibles dans les [dépôts publics](https://github.com/cybou-fr?tab=repositories).
+
+## Ma méthode d'ingénierie
+
+**Comprendre → Évaluer → Arbitrer → Documenter → Implémenter → Tester → Transmettre.**
+
+1. **Cadrer :** objectifs métier, contraintes, architecture existante et risques.
+2. **Comparer :** alternatives, coûts, compromis et architecture cible proportionnée.
+3. **Décider :** ADR, diagrammes, contrats, critères d'acceptation et stratégie de migration.
+4. **Livrer :** tranche verticale fonctionnelle, revue de code, CI, tests et démonstration.
+5. **Transmettre :** documentation exploitable, limites, dette résiduelle et étapes suivantes.
+
+L'intelligence artificielle accélère l'analyse, la documentation, l'implémentation et les tests ; **les décisions, la validation du code et la responsabilité technique restent humaines**.
+
+## Compétences principales
+
+- **Langages et systèmes :** C++20, Go, Rust, Delphi, C#/.NET ; Linux et Windows.
+- **Applications desktop :** Qt / QML, interfaces natives, composants et intégration système.
+- **Cloud, réseau et données :** API/RPC, architectures distribuées, P2P, stockage, migration et fiabilité.
+- **Qualité :** documentation d'architecture, ADR, tests de non-régression, CI/CD, threat modeling, sécurité pragmatique.
+
+## Travaillons ensemble
+
+**Audit et feuille de route · Architecture et documentation · Modernisation / migration · MVP et développement logiciel.**
+
+Missions courtes ou longues, en collaboration directe, à distance. Contractualisation via Malt ; portage salarial possible selon le cadre de la mission.
+
+**[Présenter votre projet sur Malt](https://www.malt.fr/profile/stanislavsaveliev)**
+
+---
+
+*Transparence : ce portfolio prouve des choix techniques observables dans des projets personnels. Il ne présente pas ces projets comme des livraisons clients, des produits certifiés ou des résultats de production non documentés.*
