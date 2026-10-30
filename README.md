@@ -8,8 +8,8 @@
 [**Me contacter sur Malt**](https://www.malt.fr/profile/stanislavsaveliev) · [Projets actifs](#projets-en-développement-actif--architecture-en-pratique) · [Méthode de migration](docs/METHODE_MIGRATION_FR.md) · [Site de présentation (sources)](docs/index.html)
 
 <div align="center">
-  <a href="https://github.com/cybou-fr/CybouBrowser"><img alt="Capture réelle du navigateur CYBOU en développement, interface Windows" src="https://raw.githubusercontent.com/cybou-fr/CybouBrowser/main/docs/screenshots/cybou-current-ui.webp" width="720" /></a>
-  <p><sub>Une réalisation réelle : CYBOU Browser, interface Windows en cours de développement (alpha), non certifiée.</sub></p>
+  <a href="https://github.com/cybou-fr/fortiq"><img alt="FORTIQ — référence graphique approuvée du desktop Linux distant, maquette de conception" src="https://raw.githubusercontent.com/cybou-fr/fortiq/main/docs/design/reference/fortiq-shell-master.png" width="720" /></a>
+  <p><sub>FORTIQ — référence de design approuvée (et non capture d’une version qualifiée). Architecture et code disponibles dans le dépôt.</sub></p>
 </div>
 
 ## Les missions sur lesquelles je peux vous aider
