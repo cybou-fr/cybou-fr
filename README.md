@@ -5,7 +5,7 @@
 > **Un logiciel à concevoir, moderniser ou remettre sous contrôle ?**
 > Je transforme un besoin complexe ou un existant difficile à faire évoluer en architecture compréhensible, plan de réalisation vérifiable et logiciel fonctionnel.
 
-[**Me contacter sur Malt**](https://www.malt.fr/profile/stanislavsaveliev) · [Voir les études de cas](#études-de-cas--preuves-techniques) · [Méthode de migration](docs/METHODE_MIGRATION_FR.md) · [Site de présentation (sources)](docs/index.html)
+[**Me contacter sur Malt**](https://www.malt.fr/profile/stanislavsaveliev) · [Projets actifs](#projets-en-développement-actif--architecture-en-pratique) · [Méthode de migration](docs/METHODE_MIGRATION_FR.md) · [Site de présentation (sources)](docs/index.html)
 
 <div align="center">
   <a href="https://github.com/cybou-fr/CybouBrowser"><img alt="Capture réelle du navigateur CYBOU en développement, interface Windows" src="https://raw.githubusercontent.com/cybou-fr/CybouBrowser/main/docs/screenshots/cybou-current-ui.webp" width="720" /></a>
@@ -23,49 +23,64 @@
 
 J'interviens **personnellement**, de l'analyse initiale à la livraison. Je combine architecture et implémentation : pas de recommandations détachées du code, ni de code sans critères de validation.
 
-## Études de cas & preuves techniques
+## Projets en développement actif — architecture en pratique
 
-**Ces projets sont des réalisations personnelles de R&D, pas des missions clients.** Chaque étude de cas distingue l'architecture cible, le code présent, les résultats vérifiés et les limites encore ouvertes.
+**Ces projets sont des réalisations personnelles de R&D, et non des missions clients.** La sélection met en avant les dépôts où le développement technique est actuellement le plus actif (activité vérifiée fin octobre 2026), pas un classement permanent. Code disponible, choix d'architecture et limites de validation restent consultables.
 
-### 1. [MUTYVA — Applications natives déclaratives](https://github.com/cybou-fr/mutyva)
-**C++20 · Qt 6.12 / QML · SQLite · Ingénierie assistée par IA**
+### 1. [FORTIQ — Bureau Linux natif, sans agent serveur](https://github.com/cybou-fr/fortiq)
+**C++20 · Qt Quick / QML · libssh2 · Windows / Android · Opérations distribuées**
 
-Concevoir une application locale dont l'interface peut évoluer à partir de propositions d'IA **sans exécuter de code généré** et sans effacer les données utilisateur. Architecture modulaire, schémas contrôlés, générations immuables, transactions et décisions ADR.
+Un bureau graphique local pour travailler sur un hôte Linux distant via SSH, SFTP, PTY et tunnels — sans déployer de service propriétaire ni de bureau graphique distant. L'architecture relie plusieurs applications (Files, MDok, Terminal, Logs, Mail, System, Network, Database) à des contrôleurs C++ et à un modèle commun de tâches.
 
-- [Étude de cas (FR)](https://github.com/cybou-fr/mutyva/blob/main/docs/CASE_STUDY_FR.md)
-- [Architecture, exigences et risques](https://github.com/cybou-fr/mutyva/blob/main/docs/23_ARCHITECTURE_ASSESSMENT.md)
+**Décisions remarquables :** identité de session explicite, gestion des résultats incertains après rupture réseau, opérations à risque protégées, séparation entre composants UX communs et logique métier, critères de recette indépendants de l'implémentation.
 
-*Statut : prototype en développement. Validation statique des contrats disponible ; qualification native Qt 6.12 encore à terminer.*
+[Étude architecturale dans le README](https://github.com/cybou-fr/fortiq#system-architecture) · [Architecture](https://github.com/cybou-fr/fortiq/blob/main/docs/ARCHITECTURE.md) · [Matrice de qualification UX](https://github.com/cybou-fr/fortiq/blob/main/docs/DESKTOP_EXPERIENCE_RELEASE_MATRIX.md)
 
-### 2. [CYBOU Browser — Navigateur natif et sécurité explicite](https://github.com/cybou-fr/CybouBrowser)
+*Statut : prototype open source en développement actif ; qualification produit et validation multi-plateforme non terminées.*
+
+### 2. [CybouDB — Moteur de données et portabilité bas niveau](https://github.com/cybou-fr/CybouDB)
+**Assembly · ABI · CMake · SQL / vecteurs / files de tâches · Portabilité ARM64**
+
+Un travail sur les frontières entre moteur de données, assembleur et plateformes : audit des dépendances d'architecture, contrats ABI, construction multiplateforme et chemin de portage ARM64. Le défi est de préserver le comportement et les invariants du moteur tout en séparant le cœur portable de ses optimisations spécifiques.
+
+[Code et documentation](https://github.com/cybou-fr/CybouDB)
+
+*Statut : développement actif ; le travail ARM64 ne doit pas être interprété comme une qualification Android de bout en bout.*
+
+### 3. [CYBOU Browser — Permissions visibles et navigation maîtrisée](https://github.com/cybou-fr/CybouBrowser)
 **C++20 · Qt WebEngine · QML · Threat modeling · Tests de sécurité**
 
-Développer un navigateur desktop où les capacités demandées par les sites sont visibles et contrôlables. Séparation entre politique, demande observée, permission et usage effectif ; architecture par frontières de confiance ; validation de sécurité fondée sur des scénarios et des preuves.
+Un navigateur natif dont l'interface rend visibles les capacités demandées par les sites. Architecture distinguant politiques, demandes observées, autorisations et utilisation effective ; contrôle des frontières de confiance et programme de vérification des risques.
 
-- [Étude de cas (FR)](https://github.com/cybou-fr/CybouBrowser/blob/main/docs/CASE_STUDY_FR.md)
-- [Qualité, preuves et limites](https://github.com/cybou-fr/CybouBrowser/blob/main/docs/ENGINEERING_QUALITY.md)
+[Étude de cas](https://github.com/cybou-fr/CybouBrowser/blob/main/docs/CASE_STUDY_FR.md) · [Preuves et limites](https://github.com/cybou-fr/CybouBrowser/blob/main/docs/ENGINEERING_QUALITY.md)
 
-*Statut : 0.4.0-alpha.1, projet de développement ; aucune certification de sécurité ni version finale revendiquée.*
+*Statut : alpha, développement actif ; aucune certification de sécurité revendiquée.*
 
-### 3. [ZFSCloud — Système de sauvegarde client–serveur](https://github.com/cybou-fr/zfscloud)
-**Go · gRPC / Protobuf · Linux / ZFS · TLS/mTLS · Client GUI/CLI**
+### 4. [CYBOU — Réseau distribué et stockage orienté objets](https://github.com/cybou-fr/cybou)
+**C++ / Qt · P2P · Identité · Chiffrement · État distribué**
 
-Assembler des services réseau, des contrats RPC, du stockage ZFS, des snapshots et plusieurs interfaces clientes. Le cas illustre l'intégration backend, infrastructure, protocole, sécurité et ergonomie.
+Conception d'un réseau de nœuds complets avec identité native et stockage d'objets chiffrés. Les sujets centraux sont les contrats de cohérence, les obligations de stockage, les flux de publication et les limites de confiance entre participants.
 
-- [Étude de cas (FR)](https://github.com/cybou-fr/zfscloud/blob/main/docs/CASE_STUDY_FR.md)
+[Code et architecture](https://github.com/cybou-fr/cybou)
 
-*Statut : sources et scénarios de test disponibles ; audit externe et cycle de vie des secrets à qualifier avant toute promesse de production.*
+*Statut : R&D active ; les garanties distribuées et de sécurité nécessitent des vérifications spécifiques.*
 
-### 4. [ConfidIS OS — Stockage chiffré et fédération de nœuds](https://github.com/cybou-fr/ConfidIS)
-**Rust · Systèmes distribués · Erasure coding · Cryptographie · Politiques de placement**
+### 5. [MUTYVA — Applications natives déclaratives](https://github.com/cybou-fr/mutyva)
+**C++20 · Qt 6.12 / QML · SQLite · Ingénierie assistée par IA**
 
-Concevoir une infrastructure auto-hébergée de traitement temporaire de données sensibles : chiffrement côté client, fragments Reed–Solomon, placement sur plusieurs nœuds et traçabilité d'exploitation.
+Un système local de composition d'applications à partir de composants déclaratifs : contrats de données, évolution contrôlée des interfaces et préservation des données utilisateur, sans devoir exécuter arbitrairement du code généré.
 
-- [Étude de cas (FR)](https://github.com/cybou-fr/ConfidIS/blob/main/docs/CASE_STUDY_FR.md)
+[Étude de cas](https://github.com/cybou-fr/mutyva/blob/main/docs/CASE_STUDY_FR.md) · [Architecture et risques](https://github.com/cybou-fr/mutyva/blob/main/docs/23_ARCHITECTURE_ASSESSMENT.md)
 
-*Statut : R&D en développement ; aucune certification réglementaire ou garantie de résilience terrain revendiquée.*
+*Statut : prototype en développement ; qualification native encore à terminer.*
 
-**Travaux complémentaires :** [Sodix — utilitaire CLI Rust / cryptographie](https://github.com/cybou-fr/sodix) et autres expérimentations accessibles dans les [dépôts publics](https://github.com/cybou-fr?tab=repositories).
+### Autres preuves techniques — projets antérieurs ou moins actifs
+
+- **[ZFSCloud](https://github.com/cybou-fr/zfscloud)** — Go, gRPC/Protobuf, TLS/mTLS et orchestration de stockage ZFS. [Étude de cas](https://github.com/cybou-fr/zfscloud/blob/main/docs/CASE_STUDY_FR.md).
+- **[ConfidIS OS](https://github.com/cybou-fr/ConfidIS)** — Rust, fragmentation chiffrée, erasure coding et distribution de données sensibles. [Étude de cas](https://github.com/cybou-fr/ConfidIS/blob/main/docs/CASE_STUDY_FR.md).
+- **[Sodix](https://github.com/cybou-fr/sodix)** — utilitaires système et cryptographie en Rust.
+
+Ces dépôts restent accessibles comme **références de compétences**, sans prétendre qu'ils sont prioritaires aujourd'hui. [Explorer tous les dépôts](https://github.com/cybou-fr?tab=repositories).
 
 ## Ma méthode d'ingénierie
 
