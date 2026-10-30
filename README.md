@@ -25,7 +25,7 @@ J'interviens **personnellement**, de l'analyse initiale à la livraison. Je comb
 
 ## Projets en développement actif — architecture en pratique
 
-**Ces projets sont des réalisations personnelles de R&D, et non des missions clients.** La sélection met en avant les dépôts où le développement technique est actuellement le plus actif (activité vérifiée fin octobre 2026), pas un classement permanent. Code disponible, choix d'architecture et limites de validation restent consultables.
+**Ces projets sont des réalisations personnelles de R&D, et non des missions clients.** La sélection met en avant les dépôts où le développement technique est actuellement le plus actif (activité vérifiée fin octobre 2026, parmi les projets publics), pas un classement permanent. Code disponible, choix d'architecture et limites de validation restent consultables.
 
 ### 1. [FORTIQ — Bureau Linux natif, sans agent serveur](https://github.com/cybou-fr/fortiq)
 **C++20 · Qt Quick / QML · libssh2 · Windows / Android · Opérations distribuées**
@@ -56,16 +56,7 @@ Un navigateur natif dont l'interface rend visibles les capacités demandées par
 
 *Statut : alpha, développement actif ; aucune certification de sécurité revendiquée.*
 
-### 4. [CYBOU — Réseau distribué et stockage orienté objets](https://github.com/cybou-fr/cybou)
-**C++ / Qt · P2P · Identité · Chiffrement · État distribué**
-
-Conception d'un réseau de nœuds complets avec identité native et stockage d'objets chiffrés. Les sujets centraux sont les contrats de cohérence, les obligations de stockage, les flux de publication et les limites de confiance entre participants.
-
-[Code et architecture](https://github.com/cybou-fr/cybou)
-
-*Statut : R&D active ; les garanties distribuées et de sécurité nécessitent des vérifications spécifiques.*
-
-### 5. [MUTYVA — Applications natives déclaratives](https://github.com/cybou-fr/mutyva)
+### 4. [MUTYVA — Applications natives déclaratives](https://github.com/cybou-fr/mutyva)
 **C++20 · Qt 6.12 / QML · SQLite · Ingénierie assistée par IA**
 
 Un système local de composition d'applications à partir de composants déclaratifs : contrats de données, évolution contrôlée des interfaces et préservation des données utilisateur, sans devoir exécuter arbitrairement du code généré.
