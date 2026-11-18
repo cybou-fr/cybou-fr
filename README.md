@@ -23,4 +23,3 @@ Linux · Windows · API & systèmes distribués · Réseaux · Intégration · T
 
 Disponible pour des missions freelance, à distance ou en mode hybride selon le projet.
 
-**[Me contacter sur Malt](https://www.malt.fr/profile/stanislavsaveliev)**
