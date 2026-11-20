@@ -1,25 +1,32 @@
 # Stanislav Saveliev
 
-**Software & Systems Architect · Full-Stack Developer**
+### Full-Stack Developer & Cybersecurity Consultant
 
-Architecte logiciel et développeur expérimenté, spécialisé dans la conception de systèmes, la modernisation d'applications existantes et la réalisation de solutions sur mesure.
+Développeur full-stack et consultant en cybersécurité basé en France, je conçois, développe et sécurise des applications et des systèmes, du cadrage technique à la mise en production.
 
-J'interviens de l'analyse technique à l'implémentation, avec une approche pragmatique : **une architecture claire, du code maintenable et des résultats vérifiables.**
+Mon approche : **une architecture claire, du code maintenable et une sécurité intégrée dès la conception**.
 
-### Domaines d'intervention
+## Domaines d'intervention
 
-- **Architecture logicielle** — audit, conception, documentation et choix techniques.
-- **Modernisation & migration** — évolution de systèmes existants, refonte progressive et compatibilité.
-- **Développement logiciel** — applications desktop, services backend et solutions full-stack.
-- **MVP & prototypage** — transformation d'une idée en produit fonctionnel.
+- **Développement full-stack** — applications métier, services backend, API, bases de données et interfaces.
+- **Cybersécurité** — analyse des risques, revue de code, sécurité applicative, durcissement des systèmes et bonnes pratiques de protection.
+- **Architecture logicielle & systèmes** — conception technique, intégration, fiabilité et documentation.
+- **Modernisation & migration** — refonte progressive de logiciels existants et interopérabilité.
+- **Prototypage & MVP** — transformation d'un besoin en solution fonctionnelle et testable.
 
-### Technologies
+## Technologies
 
-**C++ / Qt · Go · Rust · Delphi · C# / .NET · SQL**
+**Langages :** Go · Rust · C++ / Qt · C# / .NET · Delphi · TypeScript · SQL
 
-Linux · Windows · API & systèmes distribués · Réseaux · Intégration · Tests
+**Environnements :** Linux · Windows · Applications desktop · Backend · Systèmes distribués · Réseaux
 
-### Collaboration
+**Sécurité :** Secure by Design · Sécurité applicative · Analyse de risques · Audit technique · Cryptographie appliquée
 
-Disponible pour des missions freelance, à distance ou en mode hybride selon le projet.
+## Projets open source
 
+- **[Vaultic](https://github.com/cybou-fr/vaultic)** — application desktop de sauvegarde chiffrée multiplateforme, développée en Go avec Fyne et intégrant le moteur restic.
+- **[HGUET](https://github.com/HGUET/hguet)** — projet Rust en développement pour la vérification de sécurité des paiements d'agents IA sur Solana.
+
+## Collaboration
+
+**Disponible pour des missions freelance** en développement full-stack, architecture logicielle et conseil en cybersécurité, à distance ou en mode hybride selon le projet.
